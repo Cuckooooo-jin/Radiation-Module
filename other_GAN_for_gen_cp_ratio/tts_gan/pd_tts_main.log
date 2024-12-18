@@ -1,0 +1,16 @@
+nohup: ignoring input
+Using cuda device
+Epoch: 0,  G_loss: 0, D_loss: 0:   0%|          | 0/20000 [00:00<?, ?it/s]Epoch 1
+-----------------------------------------------
+-----------------------------------------------
+Epoch: 0,  G_loss: 0, D_loss: 0:   0%|          | 0/20000 [00:04<?, ?it/s]
+Traceback (most recent call last):
+  File "/remote-home/21310019/2024/cloudtype_pd_other_GANs/tts_gan/pd_tts_main.py", line 191, in <module>
+    batch_real_discrete,batch_real_continuous= tts_train.train_gp(gen=gen, dis=dis, dataloader=train_data, 
+  File "/remote-home/21310019/2024/cloudtype_pd_other_GANs/tts_gan/tts_train.py", line 62, in train_gp
+    D_loss.backward(retain_graph = True)
+  File "/root/anaconda3/envs/jinyujia/lib/python3.8/site-packages/torch/_tensor.py", line 487, in backward
+    torch.autograd.backward(
+  File "/root/anaconda3/envs/jinyujia/lib/python3.8/site-packages/torch/autograd/__init__.py", line 200, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+RuntimeError: GET was unable to find an engine to execute this computation

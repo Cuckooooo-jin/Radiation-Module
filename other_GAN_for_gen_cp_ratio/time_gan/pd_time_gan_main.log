@@ -1,0 +1,12 @@
+nohup: ignoring input
+Using cuda device
+Traceback (most recent call last):
+  File "/remote-home/21310019/2024/cloudtype_pd_other_GANs/time_gan/pd_time_gan_main.py", line 251, in <module>
+    emb_loss = timegan_train.embedding_train(embedder=emb,recovery=rec,dataloader=train_data,
+  File "/remote-home/21310019/2024/cloudtype_pd_other_GANs/time_gan/timegan_train.py", line 30, in embedding_train
+    E_loss0.backward()
+  File "/root/anaconda3/envs/jinyujia/lib/python3.8/site-packages/torch/_tensor.py", line 487, in backward
+    torch.autograd.backward(
+  File "/root/anaconda3/envs/jinyujia/lib/python3.8/site-packages/torch/autograd/__init__.py", line 200, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+RuntimeError: CUDA error: CUBLAS_STATUS_ALLOC_FAILED when calling `cublasCreate(handle)`
